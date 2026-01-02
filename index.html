@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsightsOman | Market Strategy & Reality</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Vazirmatn:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --q-blue: #0076CE;
+            --q-dark: #091E42;
+            --q-navy: #002B49;
+            --q-text: #172B4D;
+            --q-bg: #FFFFFF;
+            --q-gray: #F4F5F7;
+        }
+        body {
+            font-family: 'Inter', 'Vazirmatn', sans-serif;
+            background-color: var(--q-bg);
+            color: var(--q-text);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+        .rtl { direction: rtl; }
+        .ltr { direction: ltr; }
+
+        .btn-primary {
+            background-color: var(--q-blue);
+            color: white;
+            transition: all 0.2s ease-in-out;
+        }
+        .btn-primary:hover {
+            background-color: #005EA3;
+            transform: translateY(-1px);
+        }
+
+        .card-premium {
+            background: white;
+            border: 1px solid #DFE1E6;
+            transition: all 0.3s cubic-bezier(0.15, 0, 0.5, 1);
+        }
+        .card-premium:hover {
+            border-color: var(--q-blue);
+            box-shadow: 0 12px 24px -8px rgba(9, 30, 66, 0.08);
+        }
+
+        .gradient-bg {
+            background: radial-gradient(circle at top right, rgba(0, 118, 206, 0.05), transparent),
+                        radial-gradient(circle at bottom left, rgba(0, 118, 206, 0.03), transparent);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-reveal { animation: fadeIn 0.6s ease-out forwards; }
+
+        .sticky-nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid #DFE1E6;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
